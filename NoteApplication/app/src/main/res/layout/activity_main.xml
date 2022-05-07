@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FAD8B5"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:id="@+id/text"
+            android:scrollbars = "vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New"
+            android:background="@drawable/new_button"
+            android:textColor="#FFFFFF"
+            android:id="@+id/newButton"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:onClick="buttonAction"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_marginLeft="6dp"
+            android:id="@+id/saveButton"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/save_button"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:onClick="buttonAction"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open"
+            android:id="@+id/openButton"
+            android:onClick="buttonAction"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="6dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="@drawable/open_button"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>
